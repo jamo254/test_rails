@@ -11,4 +11,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  get "/up", to: ->(env) { [200, {}, ["OK"]] }
+
 end
